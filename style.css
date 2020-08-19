@@ -9,6 +9,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -16,12 +17,11 @@ body {
     border-radius: 5px;
     width: 800px;
     max-width: 100%;
-    height: 1100px;
-    margin-top: 22px;
+    margin: 22px auto;
     padding: 15px;
 }
 
-.board{
+.board {
     background-color: #232B3D;
     color: #fff;
     padding: 35px;
@@ -35,7 +35,7 @@ h3 {
     font-size: 18px;
 }
 
-span {
+.board-num {
     margin: 13px;
     display: block;
     font-weight: 900;
@@ -44,73 +44,117 @@ span {
     opacity: 0.6;
 }
 
-progress {
+#progress {
     background: #F7B354;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 18px;
 }
 
-  progress::-webkit-progress-value {
+#progress::-webkit-progress-value {
     background: #F7B354;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 18px;
 }
 
-  progress::-moz-progress-bar {
+#progress::-moz-progress-bar {
     background: #F7B354;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 18px;
 }
 
 .contestants {
-    padding: 35px;
+    margin-top: 29px;
+    padding: 2rem;
     display: grid;
-    grid-template: repeat(3, 50%) / repeat(2, 50%)
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.2rem
 }
 
 .contestant-box {
+    margin-top: 33px;
+    align-items: center; 
+    flex-wrap: wrap;    
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 4px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 img {
-    width: 130px;
-    height: 114px;
+    width: 135px;
     border-radius: 50%;   
 }
 
 .contestant-img {
-    flex-basis: 140px;
-    text-align: center;
+    width: 50%;
+    padding: .3rem;
 }
 
 .vote {
-    flex-basis: calc(100% - 140px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
 }
 
 p {
-    font-family: Roboto;
+    display: block;
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 21px;
 }
 
-button {
+.vote-button {
+    border: 1px solid rgb(233, 233, 233);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .2rem;
+    padding: .2rem .5rem;
+    margin: 0 .2rem 0 0;
+    font-size: 20px;
+}
+
+.vote-button>button {
+    border: none;
+    padding: 8px;
+    background: none;
+}
+
+footer{
+    margin: 1rem auto;
+    text-align: center;
+}
+
+#leaderboard {
+    width: 270px;
+    height: 50px;
+    background: #1E2A5A;
+    border-radius: 10px;
+
     font-weight: bold;
     font-size: 18px;
-    height: 21px;
-    width: 26px;
+    color: #fff;
+    text-align: center;
+    padding: .5rem 3rem;
+    margin-top: 42px;
 }
 
-input {
-    width: 30px;
-    height: 28px;
+h5 {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #EE1A30;
+    margin: 1rem 0;
 }
 
-.vote>button {
-    background-color: #fff;
-    width: 29px;
-    height: 27px;
-}
 
+
+@media (max-width: 650px) {
+    .contestants {
+        margin: 1rem 0;
+    }
+.contestant-box {
+    display: block;
+    margin: 1rem 0;
+}
+}

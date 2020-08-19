@@ -1,0 +1,42 @@
+h1{
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 22px;
+}
+
+h2{
+    font-size: 18px;
+}
+
+.number {
+    width: 42px;
+    height: 42px;
+    background: #1E2A5A;
+    border-radius: 50%;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    margin-left: 120px;
+}
+
+span {
+    color: #fff;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: #18BBB6;
+    padding-top: 25px;
+}
+
+.footer {
+    margin: 1rem auto;
+    text-align: center;
+}
