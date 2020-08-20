@@ -10,105 +10,183 @@
 </head>
 <body>
     <div class="container">
+        
+        <div class="hide">
       <div class="board">
-        <h3>My Available Votes <h1 class="board-num">150</h1></h3>
-        <div id="progressbar" style="height:12px; width:100%">
-            <div class="progress"></div>
-          </div>
+        <h3>My Available Votes</h3>
+        <h1 class="board-num">100</h1>
+       <div id="progress"></div>
     </div>
 
     <div class="contestants">
         <div class="contestant-box">
-           <div class="contestant-img"><img src="img/dorothy.jpg" alt="dorothy's image"  style="width: 107px;"></div>
-           <div class="vote">
-                <p>Dorathy</p>
-
-              <div class="vote-button">
-                <button class="dorathy" onclick="decreaseCount()">-</button>
-                <span class="dorathy votes-count">0</span>
-                <button class="dorathy" onclick="increaseCount()">+</button>
-              </div>
-           </div>
-        </div>
-
-        <div class="contestant-box">
-            <div class="contestant-img">
-                <img src="img/brighto.jpeg" alt="">
-            </div>
+            <div class="contestant-img"><img src="img/dorothy.jpg" alt="dorothy's image"  style="width: 107px;"></div>
             <div class="vote">
-                 <p>Brighto</p>
+                 <p>Dorathy</p>
  
-                <div class="vote-button">
-                    <button class="brighto" onclick="decreaseCount()">-</button>
-                    <span class="brighto votes-count">0</span>
-                    <button  class="brighto" onclick="increaseCount()">+</button>
-              </div>
+               <div class="vote-button">
+                 <button class="dorathy" onclick="decreaseCount()">-</button>
+                 <span class="dorathy votes-count">0</span>
+                 <button class="dorathy" onclick="increaseCount()">+</button>
+               </div>
             </div>
          </div>
-         <div class="contestant-box">
-            <div class="contestant-img">
-                <img src="img/wathoni.png" alt="a picture of wathoni" >
-            </div>
-            <div class="vote">
-                 <p>wathoni</p>
  
-                <div class="vote-button">
-                    <button class="wathoni" onclick="decreaseCount()">-</button>
-                    <span class="wathoni votes-count">0</span>
-                    <button class="wathoni" onclick="increaseCount()">+</button>
-              </div>
-            </div>
-         </div>
          <div class="contestant-box">
-            <div class="contestant-img">
-                <img src="img/erica.jpg" alt="an image of erica" >
-            </div>
-            <div class="vote">
-                 <p>Erica</p>
- 
-                <div class="vote-button">
-                    <button class="erica"onclick="decreaseCount()" >-</button>
-                    <span class="erica votes-count">0</span>
-                    <button class="erica" onclick="increaseCount()">+</button>
-              </div>
-            </div>
-         </div>
-         <div class="contestant-box">
-            <div class="contestant-img">
-                <img src="img/kidd.jpg" alt="an image of Kiddwaya" >
-            </div>
-            <div class="vote">
-                 <p>Kiddwaya</p>
- 
-                <div class="vote-button">
-                    <button class="kidd" onclick="decreaseCount()">-</button>
-                    <span class="kidd votes-count">0</span>
-                    <button class="kidd" onclick="increaseCount()">+</button>
-              </div>
-            </div>
-         </div>
-         <div class="contestant-box">
-            <div class="contestant-img">
-                <img src="img/Nengi.png" alt="a picture of Nengi" >
-            </div>
-            <div class="vote">
-                 <p>Nengi</p>
-
+             <div class="contestant-img">
+                 <img src="img/brighto.jpeg" alt="a picture of brighto">
+             </div>
+             <div class="vote">
+                  <p>Brighto</p>
+  
                  <div class="vote-button">
-                    <button class="nengi" onclick="decreaseCount()">-</button>
-                    <span class="nengi votes-count">0</span>
-                    <button class="nengi" onclick="increaseCount()">+</button>
-                  </div>
-            </div>
-         </div>  
+                     <button class="brighto" onclick="decreaseCount()">-</button>
+                     <span class="brighto votes-count">0</span>
+                     <button  class="brighto" onclick="increaseCount()">+</button>
+               </div>
+             </div>
+          </div>
+          <div class="contestant-box">
+             <div class="contestant-img">
+                 <img src="img/wathoni.png" alt="a picture of wathoni">
+             </div>
+             <div class="vote">
+                  <p>wathoni</p>
+  
+                 <div class="vote-button">
+                     <button class="wathoni" onclick="decreaseCount()">-</button>
+                     <span class="wathoni votes-count">0</span>
+                     <button class="wathoni" onclick="increaseCount()">+</button>
+               </div>
+             </div>
+          </div>
+          <div class="contestant-box">
+             <div class="contestant-img">
+                 <img src="img/erica.jpg" alt="an image of erica" >
+             </div>
+             <div class="vote">
+                  <p>Erica</p>
+  
+                 <div class="vote-button">
+                     <button class="erica"onclick="decreaseCount()" >-</button>
+                     <span class="erica votes-count">0</span>
+                     <button class="erica" onclick="increaseCount()">+</button>
+               </div>
+             </div>
+          </div>
+          <div class="contestant-box">
+             <div class="contestant-img">
+                 <img src="img/kidd.jpg" alt="an image of Kiddwaya">
+             </div>
+             <div class="vote">
+                  <p>Kiddwaya</p>
+  
+                 <div class="vote-button">
+                     <button class="kidd" onclick="decreaseCount()">-</button>
+                     <span class="kidd votes-count">0</span>
+                     <button class="kidd" onclick="increaseCount()">+</button>
+               </div>
+             </div>
+          </div>
+          <div class="contestant-box">
+             <div class="contestant-img">
+                 <img src="img/Nengi.png" alt="a picture of Nengi">
+             </div>
+             <div class="vote">
+                  <p>Nengi</p>
+ 
+                  <div class="vote-button">
+                     <button class="nengi" onclick="decreaseCount()">-</button>
+                     <span class="nengi votes-count">0</span>
+                     <button class="nengi" onclick="increaseCount()">+</button>
+                   </div>
+             </div>
+          </div> 
+
+          <footer>
+            <button class="buttons" id="leaderboard">View Leaderboard</button>
+            <h5 class="error"></h5>
+        </footer> 
     </div>
-
-    <footer>
-        <button id="leaderboard">View Leaderboard</button>
-        <h5 id="errror"></h5>
-    </footer>
-
 </div>
+
+    <div class="container leader-board"> 
+
+        <h1 class="lead-head">Leaderboard</h1>
+      <div class="contestants">
+          <div class="contestant-box">
+             <div class="contestant-img"><img src="img/dorothy.jpg" alt="dorothy's image"  style="width: 107px;"></div>
+             <div class="vote">
+                  <h2 id="name">Dorothy</h2>
+  
+                <div class="number">
+                  <span></span>
+                </div>
+             </div>
+          </div>
+  
+          <div class="contestant-box">
+            <div class="contestant-img"><img src="img/brighto.jpeg" alt="a picture of brighto"></div>
+            <div class="vote">
+                 <h2 id="name">Brighto</h2>
+ 
+               <div class="number">
+                 <span></span>
+               </div>
+            </div>
+         </div>
+
+         <div class="contestant-box">
+            <div class="contestant-img"><img src="img/wathoni.png" alt="a picture of wathoni"></div>
+            <div class="vote">
+                 <h2 id="name">Wathoni</h2>
+ 
+               <div class="number">
+                 <span></span>
+               </div>
+            </div>
+         </div>
+           
+        
+         <div class="contestant-box">
+            <div class="contestant-img"><img src="img/erica.jpg" alt="an image of erica"></div>
+            <div class="vote">
+                  <h2 id="name">erica</h2>
+ 
+               <div class="number">
+                 <span></span>
+               </div>
+            </div>
+         </div>
+           
+           <div class="contestant-box">
+            <div class="contestant-img"><img src="img/kidd.jpg" alt="an image of Kiddwaya" ></div>
+            <div class="vote">
+                  <h2 id="name">Kiddwaya</h2>
+ 
+               <div class="number">
+                 <span></span>
+               </div>
+            </div>
+         </div>
+
+         <div class="contestant-box">
+            <div class="contestant-img"><img src="img/Nengi.png" alt="a picture of Nengi"></div>
+            <div class="vote">
+                <h2 id="name">Nengi</h2>
+ 
+               <div class="number">
+                 <span></span>
+               </div>
+            </div>
+         </div>
+      </div>
+  
+      <footer>
+          <h4 class="message"></h4>
+          <button id="back" class="buttons">Back to Vote</button>
+      </footer>
+    </div>
 
     <script src='app.js'></script>
 </body>

@@ -25,7 +25,7 @@ body {
     background-color: #232B3D;
     color: #fff;
     padding: 35px;
-    margin: 30px;   
+    margin: 30px;
     text-align: center;
     border-radius: 5px;
 }
@@ -45,18 +45,24 @@ h3 {
 }
 
 #progress {
+    height: 12px;
+    width: 100%;
     background: #F7B354;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 18px;
 }
 
 #progress::-webkit-progress-value {
+    height: 12px;
+    width: 100%;
     background: #F7B354;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 18px;
 }
 
 #progress::-moz-progress-bar {
+    height: 12px;
+    width: 100%;
     background: #F7B354;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 18px;
@@ -72,8 +78,8 @@ h3 {
 
 .contestant-box {
     margin-top: 33px;
-    align-items: center; 
-    flex-wrap: wrap;    
+    align-items: center;
+    flex-wrap: wrap;
     border: 1px solid rgb(233, 233, 233);
     border-radius: 4px;
     display: flex;
@@ -81,7 +87,7 @@ h3 {
 
 img {
     width: 135px;
-    border-radius: 50%;   
+    border-radius: 50%;
 }
 
 .contestant-img {
@@ -93,7 +99,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction:column;
+    flex-direction: column;
 }
 
 p {
@@ -120,16 +126,17 @@ p {
     background: none;
 }
 
-footer{
+footer {
     margin: 1rem auto;
     text-align: center;
 }
 
-#leaderboard {
+.buttons {
     width: 270px;
     height: 50px;
     background: #1E2A5A;
     border-radius: 10px;
+    cursor: pointer;
 
     font-weight: bold;
     font-size: 18px;
@@ -144,7 +151,49 @@ h5 {
     font-size: 18px;
     text-align: center;
     color: #EE1A30;
-    margin: 1rem 0;
+    
+}
+
+.leader-board {
+    display: none;
+}
+
+.lead-head {
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 22px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.number {
+    width: 42px;
+    height: 42px;
+    background: #1E2A5A;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    margin-left: 120px;
+}
+
+span {
+    color: #000;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: #18BBB6;
+    padding-top: 25px;
 }
 
 
@@ -153,8 +202,9 @@ h5 {
     .contestants {
         margin: 1rem 0;
     }
-.contestant-box {
-    display: block;
-    margin: 1rem 0;
-}
+
+    .contestant-box {
+        display: block;
+        margin: 1rem 0;
+    }
 }
