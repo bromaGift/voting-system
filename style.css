@@ -15,8 +15,9 @@ body {
 .container {
   background: #fff;
   border-radius: 5px;
-  width: 900px;
+  width: 960px;
   max-width: 100%;
+  height: 100%;
   margin: 22px auto;
   padding: 15px;
 }
@@ -69,21 +70,21 @@ h3 {
 }
 
 .contestants,
-.board2 .contestants{
+.board2 .contestants {
   margin-top: 29px;
   padding: 2rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   grid-gap: 1.2rem;
 }
 
 .contestant-box {
   margin-top: 33px;
   align-items: center;
+  display: flex;
   flex-wrap: wrap;
   border: 1px solid rgb(233, 233, 233);
   border-radius: 4px;
-  display: flex;
 }
 
 img {
@@ -121,7 +122,7 @@ p {
   font-size: 20px;
 }
 
-.vote-button > button {
+.vote-button>button {
   cursor: pointer;
   border: none;
   padding: 8px;
@@ -139,7 +140,6 @@ footer {
   background: #1e2a5a;
   border-radius: 10px;
   cursor: pointer;
-
   font-weight: bold;
   font-size: 18px;
   color: #fff;
@@ -177,13 +177,12 @@ h2 {
   height: 42px;
   background: #1e2a5a;
   border-radius: 50%;
-  /* text-align: center; */
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
   color: white;
-  margin-left: 200px;
+  margin: auto;
 }
 
 span {
@@ -195,16 +194,4 @@ h4 {
   font-size: 20px;
   text-align: center;
   color: #18bbb6;
-}
-
-@media (max-width: 650px) {
-  .contestants,
-  .board2 {
-    margin: 1rem 0;
-  }
-
-  .contestant-box {
-    display: block;
-    margin: 1rem 0;
-  }
 }
